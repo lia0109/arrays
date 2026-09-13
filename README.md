@@ -1,6 +1,4 @@
 # arrays
-void main() {
-
 /* int[] reihung = new int[5];
     Scanner sc = new Scanner(System.in);
     for(int i = 0; i< reihung.length; i++) {
@@ -25,11 +23,19 @@ void main() {
     IO.println(Arrays.toString(a));
     IO.println(Arrays.toString(b));
 
-*/
+
 
     int[] c = {1, -2, -3, 4, 6, 8, -7};
     IO.print(negative(c));
+*/
 
+    float[] d = {1, 4, 7, 8};
+    float erg = 0;
+    for (int z = 0; z < d.length; z++){
+        erg = erg + d[z];
+    }
+    erg = erg / d.length;
+    IO.println(erg);
 }
 
 public int negative (int[] c){
@@ -41,4 +47,3 @@ public int negative (int[] c){
     }
     }
     return anzahl;
-}
